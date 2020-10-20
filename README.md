@@ -1,4 +1,4 @@
-# GO TO JAVA BRANCH FOR SPRING REST APIs
+# GO TO JAVA BRANCH FOR SPRING REST APIs (do not use the springrestapi folder in master branch)
 
 
 # AngularClient
