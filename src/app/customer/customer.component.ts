@@ -74,7 +74,7 @@ export class CustomerComponent implements OnInit {
     // this.scoreList.splice(indexPosition, 1);
     this.service.remove(entity).subscribe(
       data => this.customerList.splice(indexPosition, 1)
-    )
+    );
     console.log(entity);
   }
 
