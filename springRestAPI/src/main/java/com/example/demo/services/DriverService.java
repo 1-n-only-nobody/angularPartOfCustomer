@@ -19,9 +19,16 @@ import com.example.demo.repos.DriverRepo;
 @Service
 public class DriverService {
 	
-	@Autowired
 	private DriverRepo repo;
 	
+	/**
+	 * @param repo the repo to set
+	 */
+	@Autowired
+	public void setRepo(DriverRepo repo) {
+		this.repo = repo;
+	}
+
 	public List<Driver> findAll() {
 		
 		return repo.findAll();
