@@ -44,7 +44,7 @@
         <td>{{eachCustomer.lastName|uppercase}}</td>
         <td>{{eachCustomer.email}}</td>
         <td>{{eachCustomer.phoneNumber|number}}</td>
-        <td> <button class="btn btn-dark" (click)="handleEdit(eachCustomer)">Edit</button> </td>
+        <td> <button class="btn btn-dark" (click)="handleEdit(eachCustomer)"> <i class="fa fa-edit" aria-hidden="true"></i></button> </td>
         <td> <button class="btn btn-dark" (click)="handleDelete(eachCustomer)"> <i class="fa fa-trash-o" aria-hidden="true"></i> </button></td>
       </tr>
     </table>
