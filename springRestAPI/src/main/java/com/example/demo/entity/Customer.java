@@ -26,10 +26,10 @@ import lombok.experimental.FieldDefaults;
 public class Customer {
 	
 	@Id
-	private int customerId;
-	private String firstName;
-	private String lastName;
-	private String email;
-	private long phoneNumber;
+	int customerId;
+	String firstName;
+	String lastName;
+	String email;
+	long phoneNumber;
 
 }
