@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+package com.example.demo.controllers;
+
+import com.example.demo.services.DriverService;
+
+/**
+ * @author manan
+ *
+ */
+public class DriverController {
+
+	private DriverService service;
+}

@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+package com.example.demo.repos;
+
+import org.springframework.stereotype.Repository;
+
+/**
+ * @author manan
+ *
+ */
+@Repository
+public class CustomerRepo {
+
+}

@@ -1,0 +1,13 @@
+/**
+ * 
+ */
+package com.example.demo.repos;
+
+/**
+ * @author manan
+ *
+ */
+@Repos
+public class CustomerRepo {
+
+}

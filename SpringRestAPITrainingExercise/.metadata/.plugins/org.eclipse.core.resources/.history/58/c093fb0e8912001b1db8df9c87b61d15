@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package com.example.demo.entity;
+
+/**
+ * @author manan
+ *
+ */
+public class Driver {
+
+	int driverId;
+	String firstName;
+	String lastName;
+	int rating;
+	String driverEmail;
+	long driverPhoneNumber;
+	
+}

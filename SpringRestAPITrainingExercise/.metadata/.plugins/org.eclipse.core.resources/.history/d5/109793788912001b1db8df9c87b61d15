@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package com.example.demo.repos;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+/**
+ * @author manan
+ *
+ */
+public interface DriverRepo extends JpaRepository<T, ID> {
+
+}
