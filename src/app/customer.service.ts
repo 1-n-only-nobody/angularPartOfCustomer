@@ -10,7 +10,7 @@ export class CustomerService {
 
   constructor(private client: HttpClient) { }
 
-  url = 'http://polygon-pc:4777/api/v1/customers';
+  url = 'http://localhost:4777/api/v1/customers';
 
   findAll(): Observable<Customer[]> {
     return this.client.get<Customer[]>(this.url);

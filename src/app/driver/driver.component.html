@@ -1,0 +1,26 @@
+<h2>This is the Driver Component</h2>
+<label for="filter"><h4>Location ==> </h4></label>
+<input type="text" [(ngModel)]='userLocation'>
+<div>
+  <table class="table table-striped">
+    <caption hidden='true'>Driver Table</caption>
+    <tr>
+      <th id="driverId">Driver ID</th>
+      <th id="firstName">First Name</th>
+      <th id="lastName">Last Name</th>
+      <th id="driverEmail">Email</th>
+      <th id="driverPhoneNumber">Phone Number</th>
+      <th id="location">Location</th>
+      <th id="rating">Rating</th>
+    </tr>
+    <tr *ngFor="let eachDriver of driverList|ratingFilter: 'rating':'location':userLocation">
+      <td>{{eachDriver.driverId}}</td>
+      <td>{{eachDriver.firstName|uppercase}}</td>
+      <td>{{eachDriver.lastName|uppercase}}</td>
+      <td>{{eachDriver.driverEmail}}</td>
+      <td>{{eachDriver.driverPhoneNumber|number}}</td>
+      <td>{{eachDriver.location}}</td>
+      <td>{{eachDriver.rating}}</td>
+    </tr>
+  </table>
+</div>

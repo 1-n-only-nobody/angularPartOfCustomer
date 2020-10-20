@@ -9,6 +9,8 @@ import { CustomerService } from '../customer.service';
 })
 export class CustomerComponent implements OnInit {
 
+  buttonText = 'Add Customer';
+  formView = true;
   customerList: Customer[];
   tempCustomerList: Customer[];
   btnText = 'Add';
@@ -55,12 +57,16 @@ export class CustomerComponent implements OnInit {
           phoneNumber : 0
         };
       }
+      this.formView = true;
+      this.buttonText = 'Add Customer';
   }
 
   handleEdit(entity: Customer): void {
     this.tempCustomer = entity;
     console.log(this.tempCustomer);
     this.btnText = 'Update';
+    this.formView = false;
+    this.buttonText = 'Hide Form';
   }
 
   handleDelete(entity: Customer): void {
@@ -70,5 +76,15 @@ export class CustomerComponent implements OnInit {
       data => this.customerList.splice(indexPosition, 1)
     )
     console.log(entity);
+  }
+
+  handleFormView(value): void {
+    if (value === true) {
+      this.formView = false;
+      this.buttonText = 'Hide Form';
+    } else {
+      this.formView = true;
+      this.buttonText = 'Add Customer';
+    }
   }
 }
