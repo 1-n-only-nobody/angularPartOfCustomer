@@ -34,7 +34,7 @@ export class CustomerComponent implements OnInit {
       this.service.update(this.tempCustomer).subscribe(
         // data => this.customerList.push(data)
       );
-      console.log(this.tempCustomer);
+      // console.log(this.tempCustomer);
       this.tempCustomer = {
         customerId : 0,
         firstName : '',
@@ -48,7 +48,7 @@ export class CustomerComponent implements OnInit {
         this.service.add(this.tempCustomer).subscribe(
           data => this.customerList.push(data)
         );
-        console.log(this.tempCustomer);
+        // console.log(this.tempCustomer);
         this.tempCustomer = {
           customerId : 0,
           firstName : '',
@@ -63,7 +63,7 @@ export class CustomerComponent implements OnInit {
 
   handleEdit(entity: Customer): void {
     this.tempCustomer = entity;
-    console.log(this.tempCustomer);
+    // console.log(this.tempCustomer);
     this.btnText = 'Update';
     this.formView = false;
     this.buttonText = 'Hide Form';
@@ -75,7 +75,7 @@ export class CustomerComponent implements OnInit {
     this.service.remove(entity).subscribe(
       data => this.customerList.splice(indexPosition, 1)
     );
-    console.log(entity);
+    // console.log(entity);
   }
 
   handleFormView(value): void {
