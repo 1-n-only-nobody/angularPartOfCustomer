@@ -33,6 +33,11 @@ public class CustomerService {
 		return repo.save(entity);
 	}
 	
+	public Customer update(Customer entity) {
+		
+		return this.add(entity);
+	}
+	
 	public void delete(Customer entity) {
 		repo.delete(entity);
 	}

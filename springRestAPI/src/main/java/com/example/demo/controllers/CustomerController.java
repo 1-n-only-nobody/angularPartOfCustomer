@@ -47,7 +47,7 @@ public class CustomerController {
 	@ResponseStatus(code = HttpStatus.ACCEPTED)
 	public Customer update(@RequestBody Customer entity) {
 		
-		return this.service.add(entity);
+		return this.service.update(entity);
 	}
 	
 	@DeleteMapping(path = "api/v1/customers/{customerId}")
